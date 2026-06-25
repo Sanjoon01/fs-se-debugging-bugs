@@ -172,7 +172,7 @@ function applyFilters() {
   ); // Intentional bug: search should include title, category, priority, status, and owner.
 
   if (selectedStatus !== "All") {
-    filtered = filtered.filter((check) => check.priority === selectedStatus);
+    filtered = filtered.filter((check) => check.status === selectedStatus);
   } // Intentional bug: status filter compares against priority.
 
   if (selectedPriority !== "All") {
